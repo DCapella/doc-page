@@ -1,0 +1,131 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 105%;
+}
+
+main {
+  margin-top: 25px;
+  margin-left: 275px;
+  padding-right: 25px;
+}
+
+pre {
+  background-color: black;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 250px;
+  max-width: 100%;
+  border-right-style: solid;
+  border-right-color: darkgrey;
+}
+
+nav header {
+  border-bottom: solid darkgrey;
+  padding-left: 35px;
+}
+
+nav a {
+  color: black;
+  display: block;
+  border-bottom: solid darkgrey;
+  height: 25px;
+  padding: 10px;
+  padding-left: 35px;
+}
+
+nav a:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+pre {
+  overflow: auto;
+}
+
+#reference_link:hover {
+  text-decoration: underline;
+}
+
+#top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.main-section header {
+  padding-left: 10px;
+  background-color: lightgrey;
+  border-radius: 2px;
+}
+
+.main-section h2 {
+  margin-left: 15px;
+}
+
+.main-section p {
+  padding-left: 25px;
+}
+
+@media (min-width: 1001px) {
+  #top {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    margin-top: 350px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  nav {
+    position: absolute;
+    text-align: center;
+    max-height: 300px;
+    width: 100%;
+    border: none;
+  }
+
+  nav header {
+    border: none;
+    padding-left: 35px;
+  }
+
+  nav div {
+    overflow: auto;
+    max-height: 70%;
+  }
+
+  nav a {
+    color: black;
+    display: block;
+    border-bottom: solid darkgrey 1px;
+    height: 25px;
+    padding: 10px;
+    padding-left: 35px;
+  }
+
+  #nav_links {
+    border: solid black 2px;
+  }
+}
